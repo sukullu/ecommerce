@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="./assets/css/bootstrap.min.css">
+<!-- Iconify -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+    <link rel ="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+     
+    <!-- ----------------------------------------------------------------------- -->
+<!--                          HEADER  to call icon                           -->
+
+<!-- ----------------------------------------------------------------------- -->
+      <!--                        location to shopping bag                         -->
+
+<!-- Top Bar -->
+ <div class="top_bar d-none d-lg-flex">
+    <div class="container">
+
+        <!-- Left Location -->
+       <div class="location">
+            <iconify-icon icon="mdi:map-marker-outline" width="18"></iconify-icon>
+            <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+        </div>
+
+        <!-- Right Dropdowns -->
+        <div class="top_right">
+            <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    Eng <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">English</a></li>
+    <li><a class="dropdown-item" href="#">Spanish</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    USD <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">USD</a></li>
+    <li><a class="dropdown-item" href="#">EUR</a></li>
+  </ul>
+</div>
+
+            <a href="./sign-in.html" class="signin">Sign in / Sign Up</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              middle header                              -->
+  <!-- =============== HEADING TWO START ==================== -->
+ <!-- 🔹 Middle Header -->
+<div class="middle-header  d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Logo -->
+            <div class="col-md-3">
+                <div class="logo_wrap">
+    <img src="./assets/images/just leaf.png" alt="logo" class="logo_img">
+    <span class="logo_text">Ecobazar</span>
+</div>
+            </div>
+
+            <!-- Search -->
+            <div class="col-md-6">
+                 <form class="search_jotxy" id="searchForm">
+    <span class="search_icon">
+        <iconify-icon icon="uil:search" width="20" height="20"></iconify-icon>
+    </span>
+    <input type="text" id="searchInput" placeholder="Search">
+    <button type="submit" class="search_btn">Search</button>
+</form>
+
+            </div>
+
+            <!-- Right Icons -->
+            <div class="col-md-3 d-flex justify-content-end align-items-center gap-3">
+
+
+                <!-- account icon -->
+                <iconify-icon icon="mdi:account-outline" width="35" height="35"></iconify-icon>
+                 <div class="divider"></div>
+
+                <!-- Heart -->
+               <a href="wishlist.html"><iconify-icon icon="line-md:heart" width="35" height="35"></iconify-icon></a>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Cart -->
+                <!-- Cart new -->
+<div class="d-flex align-items-center gap-2">
+
+    <div class="cart position-relative" id="cartToggle">
+        <iconify-icon icon="heroicons:shopping-bag" width="35" height="35"></iconify-icon>
+        <span class="cart-badge">2</span>
+    </div>
+
+    <div>
+        <small>Shopping cart:</small><br>
+        <strong>$57.00</strong>
+    </div>
+
+</div>
+          </div>
+        </div>
+    </div>
+</div>
+    <!-- =============== HEADING TWO END ==================== -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                        shopping bag sidebar html                        -->
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <!-- Header -->
+    <div class="cart_header">
+        <h3>Shopping Cart (2)</h3>
+        <button class="close_btn" id="closeCart">✕</button>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart_body">
+
+        <div class="cart_item">
+            <img src="./assets/images/cart sidebar image.png" alt="Orange">
+            <div class="item_info">
+                <p>Fresh Indian Orange</p>
+                <span>1 kg x $12.00</span>
+            </div>
+            <button class="remove_btn">✕</button>
+        </div>
+
+        <hr>
+
+        <div class="cart_item">
+            <img src="./assets/images/cart sidebar image 2.png" alt="Apple">
+            <div class="item_info">
+                <p>Green Apple</p>
+                <span>1 kg x $14.00</span>
+            </div>
+            <button class="remove_btn">✕</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cart_footer">
+        <div class="total">
+            <span>2 Product</span>
+            <strong>$26.00</strong>
+        </div>
+
+          <a class="checkout" href="checkout.html">Checkout</a>
+    <a href="./shopping cart.html" id="goToCart" class="goto_cart">Go To Cart</a>
+    </div>
+
+</aside>
+
+<div class="overlay-cart" id="cartOverlay"></div>
+    <!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           bkack shadow header                           -->
+
+<!-- 🔹 Menu Bar -->
+<div class="menu-bar  d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+
+            <!-- Left Menu -->
+            <div class="col-auto">
+                <ul class="nav">
+
+                    <!-- Home -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Home
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">Home 1</a></li>
+                            <li><a class="dropdown-item">Home 2</a></li>
+                            <li><a class="dropdown-item">Home 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Shop -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Shop
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./shop-grid.html">Shop Grid</a></li>
+                            <li><a class="dropdown-item">Shop List</a></li>
+                            <li><a class="dropdown-item">Product Details</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Pages
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">About Us</a></li>
+                            <li><a class="dropdown-item">FAQ</a></li>
+                            <li><a class="dropdown-item">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Blog -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Blog
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="./blog.html">Blog Grid</a></li>
+                            <li><a class="dropdown-item">Blog List</a></li>
+                            <li><a class="dropdown-item">Single Post</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Right Side (Phone) -->
+            <div class="col-auto d-flex align-items-center gap-2 text-white">
+                <iconify-icon icon="mdi:phone-outline"></iconify-icon>
+                <span class="number">(219) 555-0114</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           mobile version html                           -->
+
+<!-- ========== Start mobile_header ========== -->
+<section id="mobile_header" class="d-lg-none">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <div class="col-6">
+                <img src="./assets/images/eco logo.png" class="img-fluid" alt="">
+            </div>
+
+            <!-- Menu Button -->
+            <div class="col-6 text-end">
+                <button class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <iconify-icon icon="mdi:menu" width="30"></iconify-icon>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ========== End mobile_header ========== -->
+
+<!-- ========== Start mobile_sidebar ========== -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+    <div class="offcanvas-header">
+        <img src="./assets/images/eco logo.png" width="120">
+        <button type="button" data-bs-dismiss="offcanvas">
+            <iconify-icon icon="mdi:close" width="28"></iconify-icon>
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+
+       <ul class="mobile-menu">
+
+    <li>
+        <a href="./index.html">
+            Home <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./shop-grid.html">
+            Shop <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="#">
+            Pages <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./blog.html">
+            Blog <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./about.html">About Us</a>
+    </li>
+
+    <li>
+        <a href="./contact.html">Contact Us</a>
+    </li>
+
+</ul>
+        <!-- Buttons -->
+        <div class="auth-btns">
+            <button class="btn btn-outline-success w-100 mb-2">Sign In</button>
+            <button class="btn btn-success w-100">Sign Up</button>
+        </div>
+
+    </div>
+
+</div>
+<!-- ========== End mobile_sidebar ========== -->
+
+<!-- ========== Start mobile_footer ========== -->
+
+
+<!-- mobile footer  with a href -->
+<section id="mobile_footer" class="d-lg-none shadow">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-3">
+                <a href="./index.html">
+                    <iconify-icon icon="ic:baseline-home" width="30"></iconify-icon>
+                    <p>Home</p>
+                </a>
+            </div>
+
+            <div class="col-3">
+                <a href="./wishlist.html">
+                    <iconify-icon icon="uil:heart" width="30"></iconify-icon>
+                    <p>Wishlist</p>
+                </a>
+            </div>
+
+           
+
+            <div class="col-3 position-relative">
+                <a href="./shopping cart.html">
+                    <iconify-icon icon="uil:shopping-bag" width="30"></iconify-icon>
+                    <p>Cart</p>
+                </a>
+            </div>
+
+
+                <div class="col-3">
+                <a href="#">
+                    <iconify-icon icon="mdi:account-outline" width="35" height="35"></iconify-icon>
+                    <p>Account</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ========== End mobile_footer ========== -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            vegetables image                             -->
+
+<div class="hero"></div>
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                     filter button and top catagories                      -->
+
+
+<div class="container py-4">
+
+    <!-- TOP BAR -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <!-- Filter Button (mobile only visible) -->
+        <button class="filter-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileFilter">
+            Filter
+        </button>
+
+        <!-- Desktop Filter Button -->
+        <button class="filter-btn d-none d-lg-inline">
+            Filter
+        </button>
+
+        <!-- Sort Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                Latest
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Latest</a></li>
+                <li><a class="dropdown-item" href="#">Popular</a></li>
+                <li><a class="dropdown-item" href="#">Oldest</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <!-- DESKTOP SIDEBAR -->
+        <div class="col-lg-4 desktop-sidebar">
+            <div class="sidebar">
+            <section class="search-section">
+    <form action="" class="search_shutter">
+        <span class="search_icon_shutter">
+            <iconify-icon icon="uil:search" width="20" height="20"></iconify-icon>
+        </span>
+        <input type="text" placeholder="Search">
+    </form>
+</section>
+            
+
+
+
+
+   <h6>Top Categories</h6>
+        <ul class="category-list p-0">
+            <li>Freshhj Fruit <span>(134)</span></li>
+            <li>Vegetables <span>(150)</span></li>
+            <li>Cooking <span>(54)</span></li>
+            <li>Snacks <span>(47)</span></li>
+            <li>Beverages <span>(38)</span></li>
+             <li>Beauty& Health <span>(38)</span></li>
+              <li>Bread & Bakery<span>(15)</span></li>
+        </ul>
+
+                <!-- Popular Tags -->
+         <h6 class="mt-4">Popular Tag</h6>
+
+<ul class="tags-container">
+    <li class="tag">Healthy</li>
+    <li class="tag active">Low Fat</li>
+    <li class="tag">Vegetarian</li>
+    <li class="tag">Bread</li>
+
+    <li class="tag">Kid foods</li>
+    <li class="tag">Vitamins</li>
+    <li class="tag">Snacks</li>
+    <li class="tag">Tiffin</li>
+
+    <li class="tag">Meat</li>
+    <li class="tag">Launch</li>
+    <li class="tag">Dinner</li>
+</ul>
+<!-- our gallery stars -->
+     
+
+
+  <!-- ================= OUR GALLERY ================= -->
+  <h2>Our Gallery</h2>
+
+  <div class="gallery">
+    <img src="./assets/blog.images/gallery 1.png" alt="">
+    <img src="./assets/blog.images/gallery 2.png" alt="">
+    <img src="./assets/blog.images/gallery 3.png" alt="">
+    <img src="./assets/blog.images/gallery 4.png" alt="">
+    
+   
+   <img src="./assets/blog.images/gallery 5.png" alt="">
+   <img src="./assets/blog.images/gallery 6.png" alt="">
+   <img src="./assets/blog.images/gallery 7.png" alt="">
+   <img src="./assets/blog.images/gallery 8.png" alt="">
+   
+  </div>
+
+
+  <!-- desktop html -->
+
+  <!-- ================= RECENTLY ADDED ================= -->
+  <h2>Recently Added</h2>
+
+  <div class="recently-added">
+
+    <div class="recent-item">
+      <img src="./assets/blog.images/recently 1.png" alt="">
+      <div class="recent-content">
+        <h4>Curabitur porttitor orci eget nequ<br> accumsan..</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="recent-item">
+     <img src="./assets/blog.images/recently 2.png" alt="">
+      <div class="recent-content">
+        <h4>Donec mattis arcu faucibus suscipit viverra.</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 15.75 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="recent-item">
+    <img src="./assets/blog.images/recently 3.png" alt="">
+      <div class="recent-content">
+        <h4>Quisque posuere tempus rutrum. Integer velit ex.</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 15.75 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- our gallery  ends -->
+
+        </div>
+        </div>
+        
+
+        <!-- BLOG CONTENT -->
+        <div class="col-lg-8">
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right images 1.png" alt="">
+                    
+                        <div class="blog-content">
+                            <h6>Curabitur porttitor orci eget neque</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 2.png" alt="">
+                        <div class="blog-content">
+                            <h6>Fresh Healthy Food Ideas</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 2nd card -->
+
+                    <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 3.png" alt="">
+                        <div class="blog-content">
+                            <h6>Curabitur porttitor orci eget neque</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 4.png" alt="">
+                        <div class="blog-content">
+                            <h6>Fresh Healthy Food Ideas</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                     <!-- 3rd card -->
+                    <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 5.png" alt="">
+                        <div class="blog-content">
+                            <h6>Curabitur porttitor orci eget neque</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 6.png" alt="">
+                        <div class="blog-content">
+                            <h6>Fresh Healthy Food Ideas</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+<!-- 4th card -->
+<div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 7.png" alt="">
+                        <div class="blog-content">
+                            <h6>Curabitur porttitor orci eget neque</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 8.png" alt="">
+                        <div class="blog-content">
+                            <h6>Fresh Healthy Food Ideas</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+    
+
+<!-- 5th  card -->
+<div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 9.png" alt="">
+                        <div class="blog-content">
+                            <h6>Curabitur porttitor orci eget neque</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="blog-card">
+                        <img src="./assets/blog.images/right image 10.png" alt="">
+                        <div class="blog-content">
+                            <h6>Fresh Healthy Food Ideas</h6>
+                            <p>Curabitur porttitor orci eget neque accumsan venenatis.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+     </div> 
+     <!-- ata miss hole full project destroy    -->
+</div>
+
+<!-- MOBILE OFFCANVAS -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilter">
+    <div class="offcanvas-header">
+        <h5>Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <!-- Same Sidebar Content -->
+       
+        <h6>Top Categories</h6>
+        <ul class="category-list p-0">
+            <li>Fresh Fruit <span>(134)</span></li>
+            <li>Vegetables <span>(150)</span></li>
+            <li>Cooking <span>(54)</span></li>
+            <li>Snacks <span>(47)</span></li>
+            <li>Beverages <span>(38)</span></li>
+        </ul>
+
+        <!-- mobile version responsive html -->
+        <h6 class="mt-4">Popular Tag</h6>
+
+        
+<ul class="tags-container-mobile">
+    <li class="tag">Healthy</li>
+    <li class="tag active">Low fat</li>
+    <li class="tag">Vegetarian</li>
+    <li class="tag">Bread</li>
+
+    <li class="tag">Kid foods</li>
+    <li class="tag">Vitamins</li>
+    <li class="tag">Snacks</li>
+    <li class="tag">Tiffin</li>
+
+    <li class="tag">Meat</li>
+    <li class="tag">Launch</li>
+    <li class="tag">Dinner</li>
+</ul>
+<!-- mobile version filter btn our gallery -->
+  <!-- ================= OUR GALLERY ================= -->
+  <h2>Our Gallery</h2>
+
+  <div class="gallery">
+   <img src="./assets/blog.images/gallery 1.png" alt="">
+    <img src="./assets/blog.images/gallery 2.png" alt="">
+    <img src="./assets/blog.images/gallery 3.png" alt="">
+    <img src="./assets/blog.images/gallery 4.png" alt="">
+    
+   
+   <img src="./assets/blog.images/gallery 5.png" alt="">
+   <img src="./assets/blog.images/gallery 6.png" alt="">
+   <img src="./assets/blog.images/gallery 7.png" alt="">
+   <img src="./assets/blog.images/gallery 8.png" alt="">
+   
+   
+  </div>
+
+
+  <!-- ================= RECENTLY ADDED ================= -->
+  <h2>Recently Added</h2>
+
+  <div class="recently-added">
+
+    <div class="recent-item">
+      <img src="./assets/blog.images/recently 1.png" alt="">
+      <div class="recent-content">
+        <h4>Curabitur porttitor orci eget nequ accumsan.</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="recent-item">
+     <img src="./assets/blog.images/recently 2.png" alt="">
+      <div class="recent-content">
+        <h4>Donec mattis arcu faucibus suscipit viverra.</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 15.75 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="recent-item">
+    <img src="./assets/blog.images/recently 3.png" alt="">
+      <div class="recent-content">
+        <h4>Quisque posuere tempus rutrum. Integer velit ex.</h4>
+
+        <div class="date">
+          <!-- Calendar SVG -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 15.75 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z"
+              stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1.5V4.5" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.25 7.5H15.75" stroke="#00B307" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span>Apr 25, 2021</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- our gallery  ends -->
+
+
+
+
+    </div>
+</div>
+
+<!-- ----------------------------------------------------------------------- -->#
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               pagination                                -->
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            
+            <div class="custom-pagination">
+
+                <!-- Previous Arrow -->
+                <a href="#" class="page-arrow">
+                 <iconify-icon icon="ic:outline-chevron-left" width="24" height="24"></iconify-icon>
+                </a>
+
+                <!-- Page Numbers -->
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-number">4</a>
+                <a href="#" class="page-number">5</a>
+
+                <!-- Dots -->
+                <span class="dots">...</span>
+
+                <a href="#" class="page-number">21</a>
+
+                <!-- Next Arrow -->
+                <a href="#" class="page-arrow">
+                    <iconify-icon icon="ic:outline-chevron-right" width="24" height="24"></iconify-icon>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               newsletter                                -->
+<section id="news_latter">
+    <div class="container">
+        <div class="news_wrapper">
+
+            <!-- Left Text -->
+            <div class="news_text">
+                <h4>Subscribe our Newsletter</h4>
+                <p>
+                    Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                    Phasellus imperdiet elit eu magna.
+                </p>
+            </div>
+
+            <!-- Middle Form -->
+            <div class="news_form">
+                <form action="">
+                    <input type="text" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="social_icons">
+                <a href="#"><iconify-icon icon="mdi:facebook" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:twitter" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:pinterest" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:instagram" width="20"></iconify-icon></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+<!-- ================= Newsletter Popup ================= -->
+<div id="newsletterPopup" class="popup-overlay">
+  <div class="popup-box">
+
+    <span class="close-btn" id="closePopup">&times;</span>
+
+    <div class="popup-content">
+
+      <!-- Left Image -->
+      <div class="popup-img">
+        <img src="./assets/images/newsletter popup.png" alt="newsletter">
+      </div>
+
+      <!-- Right Content -->
+      <div class="popup-text">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>
+          Subscribe to our newsletter and Save your
+          <span>20% <br>money</span> with discount code today.
+        </p>
+
+        <form id="popupForm">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="dont-show">
+          <input type="checkbox" id="hidePopup">
+          <label for="hidePopup">Do not show this window</label>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- newsletter popup end -->
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              footer start                               -->
+
+
+
+
+
+<!-- footer strats -->
+
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo & Info -->
+      <div class="col-lg-4 mb-4">
+       <div class="logo_wrap">
+    <img src="./assets/images/just leaf.png" alt="logo" class="logo_img">
+    <span class="logo_footer">Ecobazar</span>
+</div>
+
+        <p class="mt-3">
+          Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+        </p>
+
+        <p class="contact-info">
+          (219) 555-0114 <br>
+          Proxy@gmail.com
+        </p>
+      </div>
+
+      <!-- My Account -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>My Account</h6>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Shopping Cart</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+
+      <!-- Helps -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Helps</h6>
+        <ul>
+          <li>Contact</li>
+          <li>Faqs</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <!-- Proxy -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Proxy</h6>
+        <ul>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Product</li>
+          <li>Track Order</li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Categories</h6>
+        <ul>
+          <li>Fruit & Vegetables</li>
+          <li>Meat & Fish</li>
+          <li>Bread & Bakery</li>
+          <li>Beauty & Health</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+      <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+
+      <div class="payment-icons">
+        <img src="./assets/images/visa.png" alt="Visa">
+        <img src="./assets/images/secure.png" alt="Secure Payment">
+        <img src="./assets/images/mastercard.png" alt="Visa">
+        <img src="./assets/images/discover.png" alt="Secure Payment">
+         <img src="./assets/images/pay.png" alt="Secure Payment">
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

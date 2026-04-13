@@ -1,0 +1,143 @@
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* ================= MOBILE VERSION ================= */
+@media (max-width: 576px) {
+
+  .popup-box {
+    width: 95%;
+    border-radius: 8px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+  }
+
+  /* Image full width on top */
+  .popup-img {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.popup-img img {
+  max-height: 250px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+  /* Content padding smaller */
+  .popup-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .popup-text h3 {
+    font-size: 18px;
+  }
+
+  .popup-text p {
+    font-size: 14px;
+  }
+
+  /* Form vertical layout */
+  .popup-text form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .popup-text input {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .popup-text button {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  /* Checkbox area */
+  .dont-show {
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  /* Close button bigger for mobile */
+  .close-btn {
+    font-size: 24px;
+    top: 8px;
+    right: 12px;
+  }
+}
+
+
+
+
+@media (min-width:320px) and (max-width:991px){
+
+
+    /* ---------- NEWSLETTER ---------- */
+    .news_wrapper{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .news_text{
+        max-width:100%;
+    }
+
+    .news_form{
+        max-width:100%;
+        width:100%;
+    }
+
+    .social_icons{
+        justify-content:center;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .sidebar {
+        display: none;
+    }
+}

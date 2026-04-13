@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./assets/css/slick.css">
+     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     
+       <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                          HEADER  to call icon                           -->
+
+<!-- ----------------------------------------------------------------------- -->
+      <!--                        location to shopping bag                         -->
+
+
+
+
+<!-- Top Bar -->
+ <div class="top_bar d-none d-lg-flex">
+    <div class="container">
+
+        <!-- Left Location -->
+       <div class="location">
+            <iconify-icon icon="mdi:map-marker-outline" width="18"></iconify-icon>
+            <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+        </div>
+
+        <!-- Right Dropdowns -->
+        <div class="top_right">
+            <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    Eng <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-lan" href="#">English</a></li>
+    <li><a class="dropdown-lan" href="#">Spanish</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    USD <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-mon" href="#">USD</a></li>
+    <li><a class="dropdown-mon" href="#">EUR</a></li>
+  </ul>
+</div>
+
+            <a href="./sign-in.html" class="signin">Sign in / Sign Up</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              middle header                              -->
+  <!-- =============== HEADING TWO START ==================== -->
+ <!-- 🔹 Middle Header -->
+<div class="middle-header  d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Logo -->
+            <div class="col-md-3">
+                <div class="logo_wrap">
+    <img src="./assets/images/just leaf.png" alt="logo" class="logo_img">
+    <span class="logo_text">Ecobazar</span>
+</div>
+            </div>
+
+            <!-- Search -->
+            <div class="col-md-6">
+                 <form class="search_jotxy" id="searchForm">
+    <span class="search_icon">
+        <iconify-icon icon="uil:search" width="20" height="20"></iconify-icon>
+    </span>
+    <input type="text" id="searchInput" placeholder="Search">
+    <button type="submit" class="search_btn">Search</button>
+</form>
+
+            </div>
+
+            <!-- Right Icons -->
+            <div class="col-md-3 d-flex justify-content-end align-items-center gap-3">
+
+
+                <!-- account icon -->
+             <div class="wishlist_icon">
+    <span style="cursor:pointer;" id="accountToggle">
+        <iconify-icon icon="mdi:account-outline" width="35" height="35"></iconify-icon>
+    </span>
+</div>
+                 <div class="divider"></div>
+
+                <!-- Heart -->
+               <a href="wishlist.html"><iconify-icon icon="line-md:heart" width="35" height="35"></iconify-icon></a>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Cart -->
+                <!-- Cart new -->
+<div class="d-flex align-items-center gap-2">
+
+    <div class="cart position-relative" id="cartToggle">
+        <iconify-icon icon="heroicons:shopping-bag" width="35" height="35"></iconify-icon>
+        <span class="cart-badge">2</span>
+    </div>
+
+    <div>
+        <small>Shopping cart:</small><br>
+        <strong>$57.00</strong>
+    </div>
+
+</div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- =============== HEADING TWO END ==================== -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                        shopping bag sidebar html                        -->
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <!-- Header -->
+    <div class="cart_header">
+        <h3>Shopping Cart (2)</h3>
+        <button class="close_btn" id="closeCart">✕</button>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart_body">
+
+        <div class="cart_item">
+            <img src="./assets/images/cart sidebar image.png" alt="Orange">
+            <div class="item_info">
+                <p>Fresh Indian Orange</p>
+                <span>1 kg x $12.00</span>
+            </div>
+            <button class="remove_btn">✕</button>
+        </div>
+
+        <hr>
+
+        <div class="cart_item">
+            <img src="./assets/images/cart sidebar image 2.png" alt="Apple">
+            <div class="item_info">
+                <p>Green Apple</p>
+                <span>1 kg x $14.00</span>
+            </div>
+            <button class="remove_btn">✕</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cart_footer">
+        <div class="total">
+            <span>2 Product</span>
+            <strong>$26.00</strong>
+        </div>
+
+          <a class="checkout" href="checkout.html">Checkout</a>
+    <a href="./shopping cart.html" id="goToCart" class="goto_cart">Go To Cart</a>
+    </div>
+
+</aside>
+
+<div class="overlay-cart" id="cartOverlay"></div>
+    <!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ========== ACCOUNT SIDEBAR START ========== -->
+<aside class="account-sidebar" id="accountSidebar">
+    <div class="account-header">
+        <h3>My Account</h3>
+        <button id="closeAccount" class="close_btn btn-close"></button>
+    </div>
+
+    <div class="account-body">
+        <div class="account-user">
+            <iconify-icon icon="mdi:account-circle" width="60" height="60"></iconify-icon>
+            <div>
+                <h4>Welcome User</h4>
+                <p>user@email.com</p>
+            </div>
+        </div>
+
+        <ul class="account-links">
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="./dashboard.html">📦 My Orders</a></li>
+            <li><a href="wishlist.html">❤️ User dashboard</a></li>
+            <li><a href="./account-settings.html">⚙️ Settings</a></li>
+        </ul>
+
+        <button class="logout-btn">Create Account</button>
+    </div>
+</aside>
+<!-- ========== ACCOUNT SIDEBAR END ========== -->
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           bkack shadow header                           -->
+
+<!-- 🔹 Menu Bar -->
+<div class="menu-bar  d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+
+            <!-- Left Menu -->
+            <div class="col-auto">
+                <ul class="nav">
+
+                    <!-- Home -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Home
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">Home 1</a></li>
+                         
+                        </ul>
+                    </li>
+
+                    <!-- Shop -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Shop
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./shop-grid.html">Shop Grid</a></li>
+                           
+                        </ul>
+                    </li>
+
+                    <!-- Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Pages
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                      
+                    </li>
+
+                    <!-- Blog -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Blog
+                            <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="./blog.html">Blog Grid</a></li>
+                           
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Right Side (Phone) -->
+            <div class="col-auto d-flex align-items-center gap-2 text-white">
+                <iconify-icon icon="mdi:phone-outline"></iconify-icon>
+                <span class="number">(219) 555-0114</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           mobile version html                           -->
+
+<!-- ========== Start mobile_header ========== -->
+<section id="mobile_header" class="d-lg-none">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <div class="col-6">
+                <img src="./assets/images/eco logo.png" class="img-fluid" alt="">
+            </div>
+
+            <!-- Menu Button -->
+            <div class="col-6 text-end">
+                <button class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <iconify-icon icon="mdi:menu" width="30"></iconify-icon>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ========== End mobile_header ========== -->
+
+<!-- ========== Start mobile_sidebar ========== -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+    <div class="offcanvas-header">
+        <img src="./assets/images/eco logo.png" width="120">
+        <button type="button" data-bs-dismiss="offcanvas">
+            <iconify-icon icon="mdi:close" width="28"></iconify-icon>
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+
+       <ul class="mobile-menu">
+
+    <li>
+        <a href="./index.html">
+            Home <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./shop-grid.html">
+            Shop <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="#">
+            Pages <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./blog.html">
+            Blog <iconify-icon icon="mdi:chevron-down"></iconify-icon>
+        </a>
+    </li>
+
+    <li>
+        <a href="./about.html">About Us</a>
+    </li>
+
+    <li>
+        <a href="./contact.html">Contact Us</a>
+    </li>
+
+</ul>
+        <!-- Buttons -->
+       <div class="auth-btns">
+  <a href="./sign-in.html" class="btn btn-outline-success w-100 mb-2">Sign In</a>
+  <a href="./sign-in.html" class="btn btn-success w-100">Sign Up</a>
+</div>
+    </div>
+
+</div>
+<!-- ========== End mobile_sidebar ========== -->
+
+<!-- ========== Start mobile_footer ========== -->
+
+
+<!-- mobile footer  with a href -->
+<section id="mobile_footer" class="d-lg-none shadow">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-3">
+                <a href="./index.html">
+                    <iconify-icon icon="ic:baseline-home" width="30"></iconify-icon>
+                    <p>Home</p>
+                </a>
+            </div>
+
+            <div class="col-3">
+                <a href="./wishlist.html">
+                    <iconify-icon icon="uil:heart" width="30"></iconify-icon>
+                    <p>Wishlist</p>
+                </a>
+            </div>
+
+           
+
+            <div class="col-3 position-relative">
+                <a href="./shopping cart.html">
+                    <iconify-icon icon="uil:shopping-bag" width="30"></iconify-icon>
+                    <p>Cart</p>
+                </a>
+            </div>
+
+
+                <div class="col-3">
+                <a href="#">
+                    <iconify-icon icon="mdi:account-outline" width="35" height="35"></iconify-icon>
+                    <p>Account</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ========== End mobile_footer ========== -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            vegetables slider                            -->
+
+<!-- ========== Start hero_slider ========== -->
+<section id="hero_slider">
+    <div class="container">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="row align-items-center">
+
+                        <!-- Text -->
+                        <div class="col-md-6">
+                            <h6 class="sub-title">WELCOME TO SHOPERY</h6>
+                            <h1>Fresh & Healthy <br> Organic Food</h1>
+                            <h4>Sale up to <span>30% OFF</span></h4>
+                            <p>Free shipping on all your order, we deliver, you enjoy</p>
+                            <a href="#" class="shop-botton">Shop Now →</a>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="col-md-6 text-center">
+                            <img src="./assets/images/vegetables slider 1.png" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h6 class="sub-title">WELCOME TO SHOPERY</h6>
+                            <h1>100% Natural <br> Vegetables</h1>
+                            <h4>Sale up to <span>20% OFF</span></h4>
+                            <p>Healthy food for your family</p>
+                            <a href="#" class="shop-botton">Shop Now →</a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="./assets/images/vegetables slider n.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h6 class="sub-title">WELCOME TO SHOPERY</h6>
+                            <h1>Fresh Fruits <br> Everyday</h1>
+                            <h4>Sale up to <span>40% OFF</span></h4>
+                            <p>Best quality organic fruits</p>
+                            <a href="#" class="shop-botton">Shop Now →</a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="./assets/images/vegetables slider3.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dots -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</section>
+<!-- ========== End hero_slider ========== -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              free shipping                              -->
+
+
+
+
+<section id="free">
+  <div class="container">
+    <div class="row">
+
+     <div class="col-6 col-lg-3">
+  <div class="box">
+    
+    <!-- NORMAL CONTENT -->
+     <img src="./assets/images/free shopping.png" alt="Free Shipping">
+    <h5>Free Shipping</h5>
+    <p>Free shipping on all your order</p>
+
+    <!-- OVERLAY -->
+    <div class="overlay">
+      <h6>Fast Delivery</h6>
+      <p>We deliver quickly & safely</p>
+    </div>
+
+  </div>
+</div>
+
+     
+     <div class="col-6 col-lg-3">
+  <div class="box">
+    
+    <!-- NORMAL CONTENT -->
+   <img src="./assets/images/customer support.png" alt="Free Shipping">
+    <h5>Free Shipping</h5>
+    <p>Free shipping on all your order</p>
+
+    <!-- OVERLAY -->
+    <div class="overlay">
+      <h6>Fast Delivery</h6>
+      <p>We deliver quickly & safely</p>
+    </div>
+
+  </div>
+</div>
+
+     
+     <div class="col-6 col-lg-3">
+  <div class="box">
+    
+    <!-- NORMAL CONTENT -->
+     <img src="./assets/images/secure payment.png" alt="Free Shipping">
+    <h5>Free Shipping</h5>
+    <p>Free shipping on all your order</p>
+
+    <!-- OVERLAY -->
+    <div class="overlay">
+      <h6>Fast Delivery</h6>
+      <p>We deliver quickly & safely</p>
+    </div>
+
+  </div>
+</div>
+
+     
+     <div class="col-6 col-lg-3">
+  <div class="box">
+    
+    <!-- NORMAL CONTENT -->
+   <img src="./assets/images/money back gurantee.png" alt="Free Shipping">
+    <h5>Free Shipping</h5>
+    <p>Free shipping on all your order</p>
+
+    <!-- OVERLAY -->
+    <div class="overlay">
+      <h6>Fast Delivery</h6>
+      <p>We deliver quickly & safely</p>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            featured product                             -->
+
+<section id="newest">
+  <div class="container">
+    <div class="head">
+            <h2>Featured Products</h2>
+         </div>
+
+    <div class="products">
+         
+      <!-- CARD -->
+      <div class="product">
+        <div class="product-img">
+          <a href="./description.html">
+            <img class="img-fluid" src="./assets/images/featured product 1.png" alt=""></a>
+                        
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+   <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+     
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+     
+    <!-- ========== End featured_products ========== -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                        hot deals and best seller                        -->
+
+
+
+<section class="products-section">
+<div class="container">
+
+<div class="row">
+
+<!-- HOT DEALS -->
+<div class="col">
+<h3>Hot Deals</h3>
+
+<div class="product-card">
+<img src="./assets/images/hot deals 1.png">
+
+<div class="product-info">
+<h4>Green Apple</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="product-card">
+<img src="./assets/images/hot deals 2.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="product-card">
+<img src="./assets/images/hot deals 3.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- BEST SELLER -->
+<div class="col">
+<h3>Best Seller</h3>
+
+<div class="product-card">
+<img src="./assets/images/best seller 1.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+<img src="./assets/images/best seller 2.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+<img src="./assets/images/best seller 3.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- TOP RATED -->
+<div class="col">
+<h3>Top Rated</h3>
+<div class="product-card">
+<img src="./assets/images/top rated 1.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+<img src="./assets/images/top rated 2.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="product-card">
+<img src="./assets/images/top rated 3.png">
+
+<div class="product-info">
+<h4>Indian Malta</h4>
+<p>$14.99</p>
+<div class="stars">
+
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star" width="18"></iconify-icon>
+<iconify-icon icon="material-symbols:star-half" width="18"></iconify-icon>
+
+</div>
+
+</div>
+
+<div class="icons">
+
+<iconify-icon icon="material-symbols:home-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:visibility-outline" width="20"></iconify-icon>
+
+<iconify-icon icon="material-symbols:favorite-outline" width="20"></iconify-icon>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- SALE IMAGE -->
+<div class="col banner">
+
+<div class="sale-box">
+<h4>SUMMER SALE</h4>
+<h1>75% off</h1>
+<button>Shop Now</button>
+</div>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- ----------------------------------------------------------------------- -->
+ 
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              top catagory                               -->
+
+
+
+<section id="category">
+    <div class="container">
+        
+        <h2 class="text-center mb-4">Top Category</h2>
+
+        <div class="position-relative">
+
+            <!-- Swiper -->
+            <div class="swiper myCategorySlider">
+                <div class="swiper-wrapper">
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                        <div class="cat-card active">
+                            <img src="./assets/images/catagory 1.png">
+                            <h6>Vegetables</h6>
+                            <p>165 Products</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cat-card">
+                            <img src="./assets/images/catagory 2.png">
+                            <h6>Fresh Fruit</h6>
+                            <p>137 Products</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cat-card">
+                            <img src="./assets/images/catagory 3.png">
+                            <h6>River Fish</h6>
+                            <p>34 Products</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cat-card">
+                            <img src="./assets/images/catagory 3.png">
+                            <h6>Meat</h6>
+                            <p>165 Products</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cat-card">
+                            <img src="./assets/images/catagory 4.png">
+                            <h6>Water & Drinks</h6>
+                            <p>48 Products</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="cat-card">
+                            <img src="./assets/images/catagory 5.png">
+                            <h6>Snacks</h6>
+                            <p>165 Products</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Arrows -->
+           <div class="arrow left">
+    <iconify-icon icon="solar:arrow-left-outline" width="24"></iconify-icon>
+</div>
+
+<div class="arrow right">
+    <iconify-icon icon="solar:arrow-right-outline" width="24"></iconify-icon>
+</div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            sale of the month                            -->
+
+
+
+<section id="promo">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- CARD 1 (WITH TIMER) -->
+            <div class="col-lg-4">
+                <div class="promo-card bg1 text-white">
+
+                    <p class="small-text">BEST DEALS</p>
+                    <h2>Sale of the Month</h2>
+
+                    <!-- TIMER -->
+                    <div class="timer">
+                        <div><span id="days">00</span><p>Days</p></div>
+                        <div><span id="hours">00</span><p>Hours</p></div>
+                        <div><span id="minutes">00</span><p>Mins</p></div>
+                        <div><span id="seconds">00</span><p>Secs</p></div>
+                    </div>
+
+                    <a href="#" class="shop-btn">Shop Now →</a>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4">
+                <div class="promo-card bg2 text-center text-white">
+
+                    <p class="small-text">85% FAT FREE</p>
+                    <h2>Low-Fat Meat</h2>
+                    <p>Started at <span class="price">$79.99</span></p>
+
+                    <a href="#" class="shop-btn">Shop Now →</a>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4">
+                <div class="promo-card bg3 text-center">
+
+                    <p class="small-text">SUMMER SALE</p>
+                    <h2>100% Fresh Fruit</h2>
+                    <p>Up to <span class="off">64% OFF</span></p>
+
+                    <a href="#" class="shop-btn">Shop Now →</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            Newest  products                             -->
+
+<section id="newest">
+  <div class="container">
+    <div class="head">
+            <h2>Featured Products</h2>
+         </div>
+
+    <div class="products">
+         
+      <!-- CARD -->
+      <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+   <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+     
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+         <div class="product">
+        <div class="product-img">
+          <img src="./assets/images/featured product 1.png" alt="apple">
+
+          <div class="heart">
+            <iconify-icon icon="mdi:heart-outline"></iconify-icon>
+          </div>
+
+          <div class="eye">
+            <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="left">
+            <h4>Green Apple</h4>
+            <p>$14.99</p>
+
+            <div class="stars">
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star"></iconify-icon>
+              <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+            </div>
+          </div>
+
+          <div class="cart">
+            <iconify-icon icon="mdi:shopping-outline"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+     
+    <!-- ========== End featured_products ========== -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Client Testimonial                            -->
+
+
+
+
+<section class="testimonial-section">
+  <div class="section-header">
+    <h2>Client Testimonial</h2>
+
+    <div class="nav-buttons">
+      <div class="nav-btn prev">
+       <iconify-icon icon="lucide:move-left" width="24" height="24"></iconify-icon>
+      </div>
+      <div class="nav-btn next">
+        <iconify-icon icon="lucide:move-right" width="24" height="24"></iconify-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Card 1 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+           Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+       <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+          Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+           Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+           Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+           Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p class="testimonial-text">
+           Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+          </p>
+
+          <div class="testimonial-footer">
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <div class="user-info">
+                <h4>Robert Fox</h4>
+                <span>Customer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+              <iconify-icon icon="mdi:star"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+ 
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                         Follow us on Instagram                          -->
+
+
+<section class="instagram-section py-5">
+  <div class="container text-center">
+    <h4 class="mb-4">Follow us on Instagram</h4>
+
+    <div class="row g-3">
+
+      <!-- IMAGE ITEM -->
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 1.png" alt="">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat 5 more -->
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 2.png">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 3.png">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 4.png">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 5.png">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="insta-card">
+          <img src="./assets/images/insta 6.png">
+          <div class="overlay">
+            <iconify-icon icon="mdi:instagram" width="28"></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               newsletter                                -->
+<section id="news_latter">
+    <div class="container">
+        <div class="news_wrapper">
+
+            <!-- Left Text -->
+            <div class="news_text">
+                <h4>Subscribe our Newsletter</h4>
+                <p>
+                    Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                    Phasellus imperdiet elit eu magna.
+                </p>
+            </div>
+
+            <!-- Middle Form -->
+            <div class="news_form">
+                <form action="">
+                    <input type="text" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="social_icons">
+                <a href="#"><iconify-icon icon="mdi:facebook" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:twitter" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:pinterest" width="20"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="mdi:instagram" width="20"></iconify-icon></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+<!-- ================= Newsletter Popup ================= -->
+<div id="newsletterPopup" class="popup-overlay">
+  <div class="popup-box">
+
+    <span class="close-btn" id="closePopup">&times;</span>
+
+    <div class="popup-content">
+
+      <!-- Left Image -->
+      <div class="popup-img">
+        <img src="./assets/images/newsletter popup.png" alt="newsletter">
+      </div>
+
+      <!-- Right Content -->
+      <div class="popup-text">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>
+          Subscribe to our newsletter and Save your
+          <span>20% <br>money</span> with discount code today.
+        </p>
+
+        <form id="popupForm">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="dont-show">
+          <input type="checkbox" id="hidePopup">
+          <label for="hidePopup">Do not show this window</label>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- newsletter popup end -->
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              footer start                               -->
+
+
+
+
+
+<!-- footer strats -->
+
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo & Info -->
+      <div class="col-lg-4 mb-4">
+       <div class="logo_wrap">
+    <img src="./assets/images/just leaf.png" alt="logo" class="logo_img">
+    <span class="logo_footer">Ecobazar</span>
+</div>
+
+        <p class="mt-3">
+          Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+        </p>
+
+        <p class="contact-info">
+          (219) 555-0114 <br>
+          Proxy@gmail.com
+        </p>
+      </div>
+
+      <!-- My Account -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>My Account</h6>
+        <ul>
+          <li>My Account</li>
+          <li>Order History</li>
+          <li>Shopping Cart</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+
+      <!-- Helps -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Helps</h6>
+        <ul>
+          <li>Contact</li>
+          <li>Faqs</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <!-- Proxy -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Proxy</h6>
+        <ul>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Product</li>
+          <li>Track Order</li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Categories</h6>
+        <ul>
+          <li>Fruit & Vegetables</li>
+          <li>Meat & Fish</li>
+          <li>Bread & Bakery</li>
+          <li>Beauty & Health</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+      <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+
+      <div class="payment-icons">
+        <img src="./assets/images/visa.png" alt="Visa">
+        <img src="./assets/images/secure.png" alt="Secure Payment">
+        <img src="./assets/images/mastercard.png" alt="Visa">
+        <img src="./assets/images/discover.png" alt="Secure Payment">
+         <img src="./assets/images/pay.png" alt="Secure Payment">
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/zoomsl.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
