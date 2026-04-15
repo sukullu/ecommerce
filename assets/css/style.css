@@ -3498,6 +3498,22 @@ height: 295px;
   object-fit: contain;
 }
 
+
+/* CART */
+#shop-products.cart {
+  width: 35px;
+  height: 35px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+
 /* HOVER ICONS */
 #shop-products .leafy_vegetables:hover .eye,
 #shop-products .leafy_vegetables:hover .heart {
